@@ -8,7 +8,7 @@ This repository provides a script to build [freefem AUR package](https://aur.arc
 
 ```
 pacman -S podman
-./build*.sh
+./build_arch_ff_container.sh
 ```
 
 
@@ -16,5 +16,5 @@ pacman -S podman
 
 ```
 sudo apt install podman
-./build*.sh
+./build_arch_ff_container.sh
 ```
