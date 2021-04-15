@@ -1,0 +1,26 @@
+name: build RORPO library
+
+on: 
+  push:
+    tags: v/[1-9]+.[0-9]+.[0-9]+
+    branches: [master]
+  pull_request: {}
+
+jobs:
+  linux:
+    name: build (base ubuntu)
+    runs-on: [ubuntu-20.10] 
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Install dependencies
+        run: |
+          sudo apt update -y
+          sudo apt install -y \
+          buildah \
+          podman
+
+      - name: Build FreeFEM podman container image
+        run: ./build_arch_ff_container.sh
