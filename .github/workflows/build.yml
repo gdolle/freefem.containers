@@ -23,4 +23,6 @@ jobs:
           podman
 
       - name: Build FreeFEM podman container image
-        run: ./build_arch_ff_container.sh
+        run: |
+          ls
+          ./build_arch_ff_container.sh
