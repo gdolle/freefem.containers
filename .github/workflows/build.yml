@@ -13,9 +13,6 @@ jobs:
     container: ubuntu:20.10 
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: recursive
       - name: Install dependencies
         run: |
           sudo apt update -y
