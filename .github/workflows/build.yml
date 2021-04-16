@@ -27,6 +27,8 @@ jobs:
           podman
 
       - name: Build FreeFEM podman container image
+        env:
+          TERM: xterm
         run: |
           podman --version
           ./build_arch_ff_container.sh
