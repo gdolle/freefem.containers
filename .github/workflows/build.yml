@@ -7,9 +7,9 @@ on:
   pull_request: {}
 
 jobs:
-  linux:
+  container:
     name: build (base ubuntu)
-    runs-on: [ubuntu-20.10] 
+    runs-on: ubuntu:20.10 
 
     steps:
       - uses: actions/checkout@v2
