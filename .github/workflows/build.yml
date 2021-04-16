@@ -16,14 +16,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          apt update -y
-          apt-get -y upgrade
+          sudo apt update -y
+          sudo apt-get -y upgrade
           . /etc/os-release
           echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
           curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key | sudo apt-key add -
-          apt update -y
-          apt-get -y upgrade
-          apt install -y \
+          sudo apt update -y
+          sudo apt-get -y upgrade
+          sudo apt install -y \
           podman
 
       - name: Build FreeFEM podman container image
