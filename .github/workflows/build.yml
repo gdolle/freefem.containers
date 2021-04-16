@@ -9,7 +9,7 @@ on:
 jobs:
   container:
     name: build (base ubuntu)
-    runs-on: ubuntu:20.10 
+    container: ubuntu:20.10 
 
     steps:
       - uses: actions/checkout@v2
