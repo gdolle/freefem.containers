@@ -18,3 +18,10 @@ pacman -S podman
 sudo apt install podman
 ./build_arch_ff_container.sh
 ```
+
+## Develop
+
+### Test the CI locally
+
+
+Install `act` a tool for github action. Just type `act` to test the CI.
