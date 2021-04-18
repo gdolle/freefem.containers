@@ -24,4 +24,4 @@ sudo apt install podman
 ### Test the CI locally
 
 
-Install `act` a tool for github action. Just type `act` to test the CI.
+Install [act](https://github.com/nektos/act) a tool for github action. Just type `act` to test the CI.
