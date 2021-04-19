@@ -1,3 +1,5 @@
+[![FreeFem AUR package](https://github.com/gdolle/podman.freefem/actions/workflows/build.yml/badge.svg)](https://github.com/gdolle/podman.freefem/actions/workflows/build.yml)
+
 # Archlinux AUR Freefem podman
 
 
