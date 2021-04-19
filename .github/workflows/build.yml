@@ -13,6 +13,7 @@ jobs:
     env:
       _BUILDAH_STARTED_IN_USERNS : ""
       BUILDAH_ISOLATION: chroot
+      TERM: xterm # gh action bug
 
     steps: 
       - uses: actions/checkout@v2
