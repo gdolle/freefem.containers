@@ -8,7 +8,7 @@ on:
 
 jobs:
   create_oci_container:
-    name: build (base ubuntu)
+    name: Build OCI Container
     runs-on: ubuntu-20.04
     env:
       _BUILDAH_STARTED_IN_USERNS : ""
